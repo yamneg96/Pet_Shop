@@ -33,8 +33,8 @@ It focuses on simplicity, performance, and a smooth user experience.
 
 ### 1️⃣ Clone the project
 ```bash
-git clone https://github.com/yourname/addis-pet-shop.git
-cd addis-pet-shop
+git clone https://github.com/yamneg96/Pet_Shop.git
+cd Pet_Shop
 ````
 
 ### 2️⃣ Install dependencies

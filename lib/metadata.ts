@@ -14,7 +14,7 @@ export const siteMetadata: Metadata = {
     "buy pets Addis",
     "Addis pet accessories",
   ],
-  authors: [{ name: "AddisPet Team" }],
+  authors: [{ name: "NYDev Team" }],
   creator: "AddisPet",
   metadataBase: new URL("https://addispet.vercel.app"),
   openGraph: {

@@ -1,9 +1,16 @@
-import React from 'react'
+"use client";
 
-const ThemeToggle = () => {
+import { useTheme } from "next-themes";
+
+export default function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+
   return (
-    <div>ThemeToggle</div>
-  )
+    <button
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="border px-3 py-1 rounded"
+    >
+      {theme === "dark" ? "Light" : "Dark"}
+    </button>
+  );
 }
-
-export default ThemeToggle

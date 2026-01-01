@@ -1,16 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-export default function MotionWrapper({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function MotionWrapper({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 16 }}
+      initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 15 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
       {children}
